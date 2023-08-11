@@ -1,4 +1,3 @@
-
 function iswinner(board, symbol){
     if(board[0]==board[1] && board[1] == board[2] && board[2]== symbol){
         return symbol;
@@ -10,7 +9,6 @@ function iswinner(board, symbol){
         return symbol;
     }
 
-
     if(board[0]==board[3] && board[3] == board[6] && board[6]== symbol){
         return symbol;
     }
@@ -20,7 +18,6 @@ function iswinner(board, symbol){
     if(board[2]==board[5] && board[5] == board[8] && board[8]== symbol){
         return symbol;
     }
-
 
     if(board[0]==board[4] && board[4] == board[8] && board[8]== symbol){
         return symbol;
