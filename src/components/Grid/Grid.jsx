@@ -9,8 +9,11 @@ function Grid({NumberOfCards}){
     const [winner, setwinner]= useState(null)
 function play(index){
    if(turn == true)
-   { board[index]= 'O'}
-   else{
+   {
+    board[index]= 'O'
+    }
+   else
+   {
     board[index]= 'X'
    }
    const win= iswinner(board, turn ? 'O' : 'X')
@@ -21,7 +24,8 @@ function play(index){
    setboard([...board])
    setturn(!turn)
 }
-function reset(){
+function reset()
+{
     setturn(true);
     setwinner(null);
     setboard(Array(NumberOfCards).fill(" "))
